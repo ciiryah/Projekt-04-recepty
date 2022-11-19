@@ -149,11 +149,8 @@ body {
 @media (min-width: 480px) and (max-width: 860px){
 
     .recepty {
-        margin: auto;
-        display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        /* border: 2px solid red; */
+        flex-direction: row;
     }
 
     .hlavni {
