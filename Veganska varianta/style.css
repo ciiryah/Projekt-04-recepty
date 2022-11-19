@@ -21,6 +21,7 @@ notebook/pc:
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
 }
 
 .paticka {
@@ -38,3 +39,220 @@ body {
 /* ----- DOLE BUDE TVOJE CSS ----- */
 /* ------------------------------- */
 
+/* MOBILE  */
+
+@media (max-width: 480px) {
+.recepty {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+
+.hlavni {
+    min-height: 200px;
+    padding: 10px;
+    flex: 1 1 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
+    background-size: cover;
+    background-position: center center;
+    order: 1;
+
+}
+.maly {
+    min-height: 90px;
+    padding: 10px;
+    flex: 1 1 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid yellow; */
+
+}
+
+.main-nazev {
+    font-family: 'Raleway', 'sans serif';
+    font-weight: 800;
+    color: white;
+    font-size: 28px;
+}
+
+.nazev {
+    font-family: 'Raleway', 'sans serif';
+    font-weight: 800;
+    color: white;
+    font-size: 18px;
+    /* border: 2px solid blue; */
+    
+}
+
+.typ {
+    font-family: 'Source Sans Pro', 'sans serif';
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    /* border: 2px solid blue; */
+}
+
+.komentar {
+    font-family: 'Source Sans Pro', 'sans serif';
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    /* border: 2px solid blue; */
+}
+
+.dva {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/chlebicek.jpg");
+    background-size: cover;
+    background-position: center center;
+    order: 2;
+}
+
+.tri {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/tacos.jpg");
+    background-size: cover;
+    background-position: center center;
+    order: 4;
+}
+
+.ctyri {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/cizrna.jpg");
+    background-size: cover;
+    background-position: center center;
+    order: 3;
+}
+
+.pet {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/burger.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+    order: 5;
+    border-bottom: none;
+}
+}
+
+/* TABLET */
+
+@media (min-width: 480px) and (max-width: 860px){
+
+    .recepty {
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px;
+        /* border: 2px solid red; */
+    }
+
+    .hlavni {
+        min-height: 250px;
+        padding: 10px;
+        flex: 1 1 100%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .maly {
+        min-height: 150px;
+        padding: 10px;
+        flex: 1 1 50%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+    }
+    .info {
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid yellow; */
+    
+    }
+    
+    .main-nazev {
+        font-family: 'Raleway', 'sans serif';
+        font-weight: 800;
+        color: white;
+        font-size: 36px;
+    }
+    
+    .nazev {
+        font-family: 'Raleway', 'sans serif';
+        font-weight: 800;
+        color: white;
+        font-size: 22px;
+        /* border: 2px solid blue; */
+        
+    }
+    
+    .typ {
+        font-family: 'Source Sans Pro', 'sans serif';
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+        /* border: 2px solid blue; */
+    }
+    
+    .komentar {
+        font-family: 'Source Sans Pro', 'sans serif';
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+        /* border: 2px solid blue; */
+    }
+    
+    .dva {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/chlebicek.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+    
+    .tri {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/tacos.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-right: none;
+    }
+    
+    .ctyri {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/cizrna.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-bottom: none;
+    }
+    
+    .pet {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/burger.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-color: black;
+        border: none;
+    }
+}
+
+/* PC */
+
+@media (min-width: 860px) {
+
+
+}
