@@ -313,6 +313,14 @@ body {
         font-size: 28px;
         /* border: 2px solid blue; */
     }
+
+    .typ {
+        font-family: 'Source Sans Pro', 'sans serif';
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+        /* border: 2px solid blue; */
+    }
         
     .komentar {
         font-family: 'Source Sans Pro', 'sans serif';
