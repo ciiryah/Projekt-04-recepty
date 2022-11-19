@@ -46,7 +46,6 @@ body {
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
     width: 100%;
     /* border: 2px solid red; */
 }
@@ -63,9 +62,9 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
     background-size: cover;
     background-position: center center;
-    order: 1;
 
 }
+
 .maly {
     min-height: 90px;
     padding: 10px;
@@ -95,8 +94,7 @@ body {
     font-weight: 800;
     color: white;
     font-size: 18px;
-    /* border: 2px solid blue; */
-    
+    /* border: 2px solid blue; */ 
 }
 
 .typ {
@@ -119,21 +117,21 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/chlebicek.jpg");
     background-size: cover;
     background-position: center center;
-    order: 2;
+    order: 1;
 }
 
 .tri {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/tacos.jpg");
     background-size: cover;
     background-position: center center;
-    order: 4;
+    order: 3;
 }
 
 .ctyri {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/cizrna.jpg");
     background-size: cover;
     background-position: center center;
-    order: 3;
+    order: 2;
 }
 
 .pet {
@@ -141,7 +139,7 @@ body {
     background-size: cover;
     background-position: center center;
     background-color: black;
-    order: 5;
+    order: 4;
     border-bottom: none;
 }
 }
@@ -155,7 +153,6 @@ body {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        padding: 10px;
         /* border: 2px solid red; */
     }
 
@@ -170,6 +167,11 @@ body {
         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
         background-size: cover;
         background-position: center center;
+    }
+
+    .male {
+        display: flex;
+        flex-wrap: wrap;
     }
 
     .maly {
@@ -253,6 +255,98 @@ body {
 /* PC */
 
 @media (min-width: 860px) {
+    .recepty {
+        margin: auto;
+        display: flex;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
 
+    .hlavni {
+        min-height: 400px;
+        padding: 20px;
+        flex: 1 1 33.333%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        border-right: 1px solid white;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
 
+    .male {
+        flex: 2 1 66.666%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .maly {
+        min-height: 200px;
+        padding: 20px;
+        flex: 1 1 50%;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        border-right: 1px solid white;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: space-between;
+        /* border: 2px solid yellow; */
+    
+    }
+    
+    .main-nazev {
+        font-family: 'Raleway', 'sans serif';
+        font-weight: 800;
+        color: white;
+        font-size: 48px;
+    }
+    
+    .nazev {
+        font-family: 'Raleway', 'sans serif';
+        font-weight: 800;
+        color: white;
+        font-size: 28px;
+        /* border: 2px solid blue; */
+    }
+        
+    .komentar {
+        font-family: 'Source Sans Pro', 'sans serif';
+        font-weight: 400;
+        font-size: 14px;
+        color: white;
+        /* border: 2px solid blue; */
+    }
+        
+    .dva {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/chlebicek.jpg");
+        background-size: cover;
+        background-position: center center;
+    }
+        
+    .tri {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/tacos.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-right: none;
+    }
+        
+    .ctyri {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/cizrna.jpg");
+        background-size: cover;
+        background-position: center center;
+        border-bottom: none;
+    }
+        
+    .pet {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/burger.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-color: black;
+        border: none;
+    }
 }
