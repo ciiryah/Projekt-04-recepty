@@ -41,13 +41,11 @@ body {
 
 /* MOBILE  */
 
-@media (max-width: 480px) {
 .recepty {
     margin: auto;
     display: flex;
     flex-direction: column;
     width: 100%;
-    /* border: 2px solid red; */
 }
 
 
@@ -62,7 +60,6 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
     background-size: cover;
     background-position: center center;
-
 }
 
 .maly {
@@ -78,8 +75,6 @@ body {
 .info {
     display: flex;
     justify-content: space-between;
-    /* border: 2px solid yellow; */
-
 }
 
 .main-nazev {
@@ -94,7 +89,6 @@ body {
     font-weight: 800;
     color: white;
     font-size: 18px;
-    /* border: 2px solid blue; */ 
 }
 
 .typ {
@@ -102,7 +96,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     color: white;
-    /* border: 2px solid blue; */
 }
 
 .komentar {
@@ -110,7 +103,6 @@ body {
     font-weight: 400;
     font-size: 14px;
     color: white;
-    /* border: 2px solid blue; */
 }
 
 .dva {
@@ -140,13 +132,12 @@ body {
     background-position: center center;
     background-color: black;
     order: 4;
-    border-bottom: none;
 }
-}
+
 
 /* TABLET */
 
-@media (min-width: 480px) and (max-width: 860px){
+@media (min-width: 480px) {
 
     .recepty {
         flex-wrap: wrap;
@@ -155,15 +146,6 @@ body {
 
     .hlavni {
         min-height: 250px;
-        padding: 10px;
-        flex: 1 1 100%;
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
-        border-bottom: 1px solid white;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
-        background-size: cover;
-        background-position: center center;
     }
 
     .male {
@@ -173,78 +155,29 @@ body {
 
     .maly {
         min-height: 150px;
-        padding: 10px;
         flex: 1 1 50%;
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
-        border-bottom: 1px solid white;
         border-right: 1px solid white;
-    }
-    .info {
-        display: flex;
-        justify-content: space-between;
-        /* border: 2px solid yellow; */
-    
     }
     
     .main-nazev {
-        font-family: 'Raleway', 'sans serif';
-        font-weight: 800;
-        color: white;
         font-size: 36px;
     }
     
     .nazev {
-        font-family: 'Raleway', 'sans serif';
-        font-weight: 800;
-        color: white;
         font-size: 22px;
-        /* border: 2px solid blue; */
-        
-    }
-    
-    .typ {
-        font-family: 'Source Sans Pro', 'sans serif';
-        font-weight: 400;
-        font-size: 14px;
-        color: white;
-        /* border: 2px solid blue; */
-    }
-    
-    .komentar {
-        font-family: 'Source Sans Pro', 'sans serif';
-        font-weight: 400;
-        font-size: 14px;
-        color: white;
-        /* border: 2px solid blue; */
-    }
-    
-    .dva {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/chlebicek.jpg");
-        background-size: cover;
-        background-position: center center;
     }
     
     .tri {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/tacos.jpg");
-        background-size: cover;
-        background-position: center center;
-        border-right: none;
+       order: 2;
+       border-right: none;
     }
     
     .ctyri {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/cizrna.jpg");
-        background-size: cover;
-        background-position: center center;
+        order: 3;
         border-bottom: none;
     }
-    
+
     .pet {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/burger.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-color: black;
         border: none;
     }
 }
@@ -252,106 +185,38 @@ body {
 /* PC */
 
 @media (min-width: 860px) {
-    .recepty {
-        margin: auto;
-        display: flex;
-        width: 100%;
-        /* border: 2px solid red; */
-    }
 
     .hlavni {
         min-height: 400px;
         padding: 20px;
         flex: 1 1 33.333%;
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
+        border-bottom: none;
         border-right: 1px solid white;
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/salat.jpg");
-        background-size: cover;
-        background-position: center center;
     }
 
     .male {
         flex: 2 1 66.666%;
-        display: flex;
-        flex-wrap: wrap;
     }
 
     .maly {
         min-height: 200px;
         padding: 20px;
-        flex: 1 1 50%;
-        display: flex; 
-        flex-direction: column;
-        justify-content: space-between;
-        border-bottom: 1px solid white;
-        border-right: 1px solid white;
-    }
-    
-    .info {
-        display: flex;
-        justify-content: space-between;
-        /* border: 2px solid yellow; */
-    
     }
     
     .main-nazev {
-        font-family: 'Raleway', 'sans serif';
-        font-weight: 800;
-        color: white;
         font-size: 48px;
     }
     
     .nazev {
-        font-family: 'Raleway', 'sans serif';
-        font-weight: 800;
-        color: white;
         font-size: 28px;
-        /* border: 2px solid blue; */
-    }
-
-    .typ {
-        font-family: 'Source Sans Pro', 'sans serif';
-        font-weight: 400;
-        font-size: 14px;
-        color: white;
-        /* border: 2px solid blue; */
-    }
-        
-    .komentar {
-        font-family: 'Source Sans Pro', 'sans serif';
-        font-weight: 400;
-        font-size: 14px;
-        color: white;
-        /* border: 2px solid blue; */
-    }
-        
-    .dva {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/chlebicek.jpg");
-        background-size: cover;
-        background-position: center center;
-    }
+    }  
         
     .tri {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/tacos.jpg");
-        background-size: cover;
-        background-position: center center;
-        border-right: none;
+        order: 2;
     }
         
     .ctyri {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/cizrna.jpg");
-        background-size: cover;
-        background-position: center center;
-        border-bottom: none;
+      order: 3;
     }
         
-    .pet {
-        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/burger.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-color: black;
-        border: none;
-    }
 }
